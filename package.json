@@ -1,15 +1,16 @@
 {
-  "bin": {
-    "vowel": "vowel.js"
-  },
-  "name": "vowel-cli",
-  "version": "1.0.0",
-  "main": "vowel.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+    "name": "vowel-cli",
+    "version": "1.0.0",
+    "bin": {
+        "vowel": "vowel.js"
+    },
+    "description": "A CLI tool to extract vowels from text",
+    "main": "vowel.js",
+    "author": "AyaanTheDev",
+    "license": "MIT",
+    "pkg": {
+  "scripts": "vowel.js",
+  "targets": ["node16-win-x64"]
+}
+
 }
