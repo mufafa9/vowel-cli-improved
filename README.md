@@ -15,5 +15,5 @@ Open up a terminal and then run
 Usage
 vowel
 ```
-and then it will ask you that input a text
+To Come
 
