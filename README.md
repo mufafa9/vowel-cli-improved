@@ -12,7 +12,7 @@ npm install -g vowel-cli
 
 Open up a terminal and then run
 
-``Usage
+Usage
 vowel
 ```
 and then it will ask you that input a text
