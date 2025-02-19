@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 const readline = require('readline');
+const chalk = require('chalk').default;
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -14,7 +15,7 @@ function extractVowels(text) {
 // Prompt user for input
 rl.question('Enter a paragraph or text: ', (input) => {
     const vowels = extractVowels(input);
-    console.log('Vowels found:', vowels.join(' '));
+    console.log(chalk.green('Vowels found:'), chalk.blue(vowels.join(' ')));
     rl.close();
 });
 
