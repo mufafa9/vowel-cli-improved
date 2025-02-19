@@ -1,21 +1,30 @@
 #!/usr/bin/env node
-const readline = require('readline');
-const chalk = require('chalk').default;
+import readline from 'readline';
+import chalk from 'chalk';
 
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
 
-// Function to extract vowels from input text
-function extractVowels(text) {
-    return text.match(/[aeiouAEIOU]/g) || [];
+// Function to count vowels from input text
+function countVowels(text) {
+    const vowels = text.match(/[aeiouAEIOU]/g) || [];
+    return vowels.length;
+}
+
+// Function to count consonants from input text
+function countConsonants(text) {
+    const consonants = text.match(/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]/g) || [];
+    return consonants.length;
 }
 
 // Prompt user for input
 rl.question('Enter a paragraph or text: ', (input) => {
-    const vowels = extractVowels(input);
-    console.log(chalk.green('Vowels found:'), chalk.blue(vowels.join(' ')));
+    const vowelCount = countVowels(input);
+    const consonantCount = countConsonants(input);
+    
+    console.log(chalk.green(`${vowelCount} vowels`), 'and', chalk.blue(`${consonantCount} consonants`), 'found');
     rl.close();
 });
 

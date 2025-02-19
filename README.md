@@ -1,12 +1,12 @@
-# vowel-cli
-vowel cli it can run on your terminal and it can tell all the vowels from a word or a paragraph or an sentence
+# vowel-cli-improved
 
-# Installiation
+A command-line tool to count vowels and consonants in text.
 
+## Installation
+
+```bash
+npm install -g vowel-cli-improved
 ```
-npm install -g vowel-cli
-```
-
 
 # Usage
 

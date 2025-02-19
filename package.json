@@ -1,21 +1,32 @@
 {
-    "name": "vowel-cli",
+    "name": "vowel-cli-improved",
     "version": "1.0.0",
+    "type": "module",
     "bin": {
         "vowel": "vowel.js"
     },
-    "description": "A CLI tool to extract vowels from text",
+    "description": "A CLI tool to count vowels and consonants in text",
     "main": "vowel.js",
     "author": "AyaanTheDev",
     "license": "MIT",
-    "pkg": {
-        "scripts": "vowel.js",
-        "targets": [
-            "node16-win-x64"
-        ]
+    "keywords": [
+        "cli",
+        "vowels",
+        "consonants",
+        "text-analysis"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yourusername/vowel-cli-improved"
+    },
+    "bugs": {
+        "url": "https://github.com/yourusername/vowel-cli-improved/issues"
     },
     "dependencies": {
         "chalk": "^5.4.1"
+    },
+    "engines": {
+        "node": ">=14.16.0"
     },
     "scripts": {
         "postinstall": "npm link"
