@@ -8,7 +8,7 @@ npm install -g vowel-cli
 ```
 
 
-#Usage
+# Usage
 
 Open up a terminal and then run
 
