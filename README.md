@@ -1,6 +1,6 @@
 # vowel-cli-improved
 
-A command-line tool to count vowels and consonants in text.
+A command-line tool that gives anaylisis of english grammar from a file.
 
 ## Installation
 
